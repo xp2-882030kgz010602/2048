@@ -121,7 +121,7 @@ HTMLActuator.prototype.updateScore = function (score) {
 };
 
 HTMLActuator.prototype.updateBestScore = function (bestScore) {
-  this.bestContainer.textContent = bestScore;
+  this.bestContainer.textContent = "Acey";
 };
 
 HTMLActuator.prototype.message = function (won) {
