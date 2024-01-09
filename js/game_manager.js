@@ -28,7 +28,7 @@ GameManager.prototype.printboard=function(xpos,ypos){//Arguments are used to hig
   }
   grid=grid.map(x=>x.join("")).join("\n");
   var log=document.getElementById("log");
-  log.value+=grid+"\n\n";
+  log.value+="\n\n"+grid;
   log.scrollTop=log.scrollHeight;
   return grid;
 };
@@ -187,6 +187,7 @@ GameManager.prototype.moveTile = function (tile, cell) {
 // Move tiles on the grid in the specified direction
 GameManager.prototype.move = function (direction) {
   // 0: up, 1: right, 2: down, 3: left
+  document.getElementById("log").value+=["up","right","down","left"][direction];//Log movement
   var self = this;
 
   if (this.isGameTerminated()) return; // Don't do anything if the game's over
