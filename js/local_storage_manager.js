@@ -19,8 +19,8 @@ window.fakeStorage = {
 };
 
 function LocalStorageManager() {
-  this.bestScoreKey     = "bestScore";
-  this.gameStateKey     = "gameState";
+  this.bestScoreKey     = "bestScore-fa01eb6c-3ffa-4bb1-afdb-1d8e73b03d29";
+  this.gameStateKey     = "gameState-fa01eb6c-3ffa-4bb1-afdb-1d8e73b03d29";
 
   var supported = this.localStorageSupported();
   this.storage = supported ? window.localStorage : window.fakeStorage;
